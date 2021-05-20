@@ -2,7 +2,7 @@
 MAINTAIN EFFICIENT PROCESS UTILIZATION ON WINDOWS
     
     
-1.Task manager
+1.Task manager:
 
 ![taskmanager](https://user-images.githubusercontent.com/83391098/118987460-e7821c80-b99d-11eb-887f-813530d151a8.png)
 
@@ -17,14 +17,21 @@ to view the apps runing behind we can use taskmanager app we can find it by sear
 task details tab is used to see the status of apps which are runnning
 
 
-3.Get process
+3.Get process:
 
 ![getprocess](https://user-images.githubusercontent.com/83391098/118988733-15b42c00-b99f-11eb-842d-f22edbda68df.png)
 
 We can get the details which apps are all running in windows by using WINDOWS POWER SHELL by using the command get-process
 
-4.Get-process select
+4.Get-process select:
 
 ![getprocess(select)](https://user-images.githubusercontent.com/83391098/118989153-6e83c480-b99f-11eb-8dd2-c8ca5e827d7a.png)
 
 To get the top three apps which are running by using the command Get-Process | Sort CPU -descending | Select -first 3 -Property  ID,ProcessName,CPU
+
+4.Task kill
+
+![taskkill](https://user-images.githubusercontent.com/83391098/118989800-f1a51a80-b99f-11eb-90b7-0fd308067c30.png)
+
+To kill the task which is runing we can use the command killtask /pid (pid  number) PID is nothing but process ID we can see the process id in task details tab
+
