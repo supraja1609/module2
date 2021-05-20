@@ -7,7 +7,7 @@ MAINTAIN EFFICIENT PROCESS UTILIZATION ON WINDOWS
 ![taskmanager](https://user-images.githubusercontent.com/83391098/118987460-e7821c80-b99d-11eb-887f-813530d151a8.png)
 
 
-to view the apps runing behind we can use taskmanager app we can find it by searching in search bar
+to view the apps running behind we can use taskmanager app we can find it by searching in search bar
 
 
 2.Task details:
@@ -29,9 +29,15 @@ We can get the details which apps are all running in windows by using WINDOWS PO
 
 To get the top three apps which are running by using the command Get-Process | Sort CPU -descending | Select -first 3 -Property  ID,ProcessName,CPU
 
-4.Task kill
+5.Task kill
 
 ![taskkill](https://user-images.githubusercontent.com/83391098/118989800-f1a51a80-b99f-11eb-90b7-0fd308067c30.png)
 
-To kill the task which is runing we can use the command killtask /pid (pid  number) PID is nothing but process ID we can see the process id in task details tab
+To kill the task which is running we can use the command killtask /pid (pid  number) PID is nothing but process ID we can see the process id in task details tab
+
+6.Multi taskkill:
+
+![multitaskkill](https://user-images.githubusercontent.com/83391098/118990317-64ae9100-b9a0-11eb-9c6e-2e21517023a4.png)
+
+We can also kill multiple task which is running by using the command killtask /pid () /pid()
 
