@@ -1,5 +1,5 @@
 # module2
-                                                      MAINTAIN EFFICIENT PROCESS UTILIZATION ON WINDOWS
+MAINTAIN EFFICIENT PROCESS UTILIZATION ON WINDOWS
     
     
 1.Task manager
@@ -22,3 +22,9 @@ task details tab is used to see the status of apps which are runnning
 ![getprocess](https://user-images.githubusercontent.com/83391098/118988733-15b42c00-b99f-11eb-842d-f22edbda68df.png)
 
 We can get the details which apps are all running in windows by using WINDOWS POWER SHELL by using the command get-process
+
+4.Get-process select
+
+![getprocess(select)](https://user-images.githubusercontent.com/83391098/118989153-6e83c480-b99f-11eb-8dd2-c8ca5e827d7a.png)
+
+To get the top three apps which are running by using the command Get-Process | Sort CPU -descending | Select -first 3 -Property  ID,ProcessName,CPU
